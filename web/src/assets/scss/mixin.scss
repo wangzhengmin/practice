@@ -1,0 +1,9 @@
+@mixin size($height:auto,$width:auto){
+  height:$height;
+  width:$width;
+}
+@mixin media{
+  @media screen and(min-width:576px){
+    @content
+  }
+}

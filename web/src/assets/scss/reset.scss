@@ -1,0 +1,76 @@
+@import 'mixin.scss';
+@import 'const.scss';
+
+*{
+  margin:0;
+  padding:0;
+}
+html,body{
+  width:100%;
+  height:100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+html{
+  font-size:100px;
+}
+body{
+  font-size:0.12rem;
+  background:rgb(247, 244, 244);
+}
+a{
+  text-decoration: none;
+  color:#666;
+  cursor: pointer;
+}
+li{
+  list-style: none;
+}
+.container{
+  width:100%;
+  height:100%;
+  box-sizing: border-box;
+}
+.row{
+  display: flex;
+  display: -webkit-flex;
+  flex-flow:row wrap;
+}
+.col{
+  display: flex;
+  display: -webkit-flex;
+  flex-flow:column nowrap;
+}
+.btn{
+  padding:0.05rem 0.1rem;
+  background:#007bff;
+  color:white;
+  border:none;
+  border-radius:0.05rem;
+}
+.top-fixed{
+  height:0.4rem;
+  line-height:0.4rem;
+  color:white;
+  font-size:0.2rem;
+  background:linear-gradient(to left,rgb(41, 159, 238),rgb(98, 189, 250));
+  position:fixed;
+  width:100%;
+  top:0;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+       url('../font/iconfont.woff2') format('woff2'),
+       url('../font/iconfont.woff') format('woff'),
+       url('../font/iconfont.ttf') format('truetype'),
+       url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 0.25rem;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
